@@ -7,30 +7,79 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Comment     -->
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut cum ut quas quod quibusdam magnam soluta, officiis quia provident nam sit facere dolorum, ea, laborum hic nisi dolore molestiae.</h1>
-    <p>odkaz <a href="https://www.google.com/" target="_blank">google</a></p>
-    <img src="https://slp-statics.astockcdn.net/static_assets/staging/24generate/Card3_Storytelling.jpg?width=580" alt="random ai">
 
-    <br>
-    <b>bold</b> <br>
-    <strong>important</strong> <br>
-    <i>Italic</i> <br>
-    <em>Emphasized text</em> <br>
-    <mark>Marked</mark> <br>
-    <small>Smaller text</small> <br>
-    <del>del</del> <br>
-    <ins>inserted</ins> <br>
-    <sub>subscript</sub> <br>
-    <sup>superscript</sup>
+    <h2>1) Table</h2>
 
-    <p>Here is a quote from WWF's website:</p>
-    <blockquote cite="http://www.worldwildlife.org/who/index.html">
-    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
-    </blockquote>
+    <table border="1">
+        <tr>
+            <th>#</th>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>1. </td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>2. </td>
+            <td>Row 2</td>
+            <td>Row 2</td>
+            <td>Row 2</td>
+        </tr>
+        <tr>
+            <td>3. </td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+        </tr>
+    </table>
 
-    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <h2>2) List</h2>
+    <ul>
+        <li>Tvorba tabulek</li>
+        <li>Tvorba seznamů</li>
+        <li>Formulářové prvky</li>
+    </ul>
 
-    <a href="mailto:someone@gmail.com"> Send email</a> 
-</body>
+    <ol>
+        <li>Nauč se základy HTML</li>
+        <li>Procvičuj na příkladech</li>
+        <li>Vyzkoušej formuláře</li>
+    </ol>
+
+    <h2>3) Form</h2>
+    <form>
+        <label>First name:</label><br>
+        <input type="text" value="firstname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" value="lastname"><br><br>
+        <input type="submit" value="Submit">
+
+    <h3>Choose</h3>
+    <input type="radio" id="opt1" name="whole" value="1st" checked>
+    <label for="opt1">1st option</label><br>
+    <input type="radio" id="opt2" name="whole" value="2nd">
+    <label for="opt2">2nd option</label><br><br>
+
+    <h3>Checkbox</h3>
+    <input type="checkbox" id="chk1" name="whole" value="ch1">
+    <label for="chck1">Check 1</label><br>
+    <input type="checkbox" id="chck2" name="whole" value="ch2">
+    <label for="chck2">Check 2</label><br><br>
+
+    <label for="mess">Message</label><br>
+    <textarea id="mess"></textarea><br><br>
+
+    <label for="zeme">Roll menu</label><br>
+    <select>
+        <option value="cz" selected>Czech</option>
+        <option value="sk">Slovakia</option>
+        <option value="pl">Poland</option>
+    </select><br><br>
+
+    </form>
+    </body>
 </html>
