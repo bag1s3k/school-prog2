@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+}
+
+tr, th {
+    outline: none;
+    border: solid black 1px;
+    padding: 5px 10px;
+}
