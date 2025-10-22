@@ -1,14 +1,76 @@
+#magnifyin-glass-icon, #building-icon, #industrial-icon, #future-icon {
+    height: 20px;
+    width: 20px;
+    background: black;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#magnifyin-glass-icon, #building-icon, #industrial-icon, #future-icon {
-    height: 20px;
-    width: 20px;
-    background: black;
+body {
+    height: 100vh;
+    font-family: Arial;
+}
+
+.home-page {
+    height: 99%;
+    width: 99%;
+    background: url("images/pexels-photo-9392381.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid white 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: solid 2px grey;
+    border-right: None;
+    border-radius: 1px;
+    padding: 7px 10px;
+    width: 170px;
+}
+
+#magnifyin-glass-icon-wrapper {
+    border: solid 2px grey;
+    border-left: none;
+    padding: 11px 10px 0 0;
+}
+
+#magnifyin-glass-icon {
+    background: grey;
     mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg");
     -webkit-mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg") no-repeat center;
+}
+
+.navigation {
+    margin: 20px 100px 0 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.navigation a:first-child {
+    color: rgb(255, 217, 0);
 }
 
 #building-icon {
