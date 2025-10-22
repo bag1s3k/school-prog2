@@ -2,3 +2,26 @@
     margin: 0;
     padding: 0;
 }
+
+#magnifyin-glass-icon, #building-icon, #industrial-icon, #future-icon {
+    height: 20px;
+    width: 20px;
+    background: black;
+    mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg");
+    -webkit-mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg") no-repeat center;
+}
+
+#building-icon {
+    mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg");
+    -webkit-mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg") no-repeat center;
+}
+
+#industrial-icon {
+    mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg");
+    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg") no-repeat center;
+}
+
+#future-icon {
+    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
+    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg") no-repeat center;
+}
