@@ -1,0 +1,158 @@
+#magnifyin-glass-icon, #building-icon, #industrial-icon, #future-icon {
+    background: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(219, 219, 219);
+    padding: 10px 10px;
+}
+
+
+.home-page {
+    background: url("images/pexels-photo-9392381.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5% 45%;
+    padding: 50px 90px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    font-size: 20px;
+    background: none;
+    color: grey;
+    border: solid 2px grey;
+    border-right: None;
+    border-radius: 1px;
+    padding: 7px 10px;
+    width: 170px;
+    transition: 0.3s;
+    outline: none;
+}
+
+form input:hover, form input:focus {
+    padding-left: 15px;
+    width: 200px;
+}
+
+#magnifyin-glass-icon-wrapper {
+    border: solid 2px grey;
+    border-left: none;
+    padding: 8px 10px 0 0;
+}
+
+#magnifyin-glass-icon-wrapper:hover {
+    cursor: pointer;
+}
+
+#magnifyin-glass-icon {
+    background: grey;
+    mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg");
+    -webkit-mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg") no-repeat center;
+    height: 20px;
+    width: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 20px;
+    font-size: 25px;
+    color: rgb(35, 35, 35);
+}
+
+.navigation a:first-child {
+    color: rgb(255, 187, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 90px;
+    color: rgb(255, 187, 0);
+    margin: 80px 0 0 0;
+}
+
+.boxes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 70px 0 70px 0;
+}
+
+.box {
+    background: rgba(29, 35, 45, 0.6);
+    padding: 20px 30px;
+    width: 500px;
+}
+
+.box h3 {
+    font-size: 25px;
+    margin: 0 0 40px 0;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+#more-button {
+    border: solid 2px rgb(255, 187, 0);
+    width: fit-content;
+    padding: 10px 50px;
+    font-size: 20px;
+    margin: 20px 0 30px 0; 
+    letter-spacing: 3px;
+}
+
+#building-icon {
+    mask: url("images/icons/Pictogrammers-Material-Factory.svg");
+    -webkit-mask: url("images/icons/Pictogrammers-Material-Factory.svg") no-repeat center;
+    background: rgb(255, 187, 0);
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 310px;
+    top: 20px;
+}
+
+#industrial-icon {
+    mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg");
+    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg") no-repeat center;
+    background: rgb(255, 187, 0);
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 310px;
+    top: 20px;
+}
+
+#future-icon {
+    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
+    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg") no-repeat center;
+    background: rgb(255, 187, 0);
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 310px;
+    top: 20px;
+}
