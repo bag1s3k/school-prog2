@@ -41,18 +41,29 @@ form {
 form input {
     font-size: 20px;
     background: none;
-    color: white;
+    color: grey;
     border: solid 2px grey;
     border-right: None;
     border-radius: 1px;
     padding: 7px 10px;
     width: 170px;
+    transition: 0.3s;
+    outline: none;
+}
+
+form input:hover, form input:focus {
+    padding-left: 15px;
+    width: 200px;
 }
 
 #magnifyin-glass-icon-wrapper {
     border: solid 2px grey;
     border-left: none;
     padding: 8px 10px 0 0;
+}
+
+#magnifyin-glass-icon-wrapper:hover {
+    cursor: pointer;
 }
 
 #magnifyin-glass-icon {
