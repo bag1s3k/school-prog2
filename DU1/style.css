@@ -168,3 +168,37 @@ form input:hover, form input:focus {
     background-position: left bottom;
     color: rgb(50, 50, 50);
 }
+
+/* -------------- SECOND PAGE -------------- */
+.nd-page {
+    height: 100vh;
+    color: rgb(35, 35, 35);
+    padding: 5em;
+}
+
+.worker {
+    background-image: url("images/pexels-photo-6474449.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+    float: left;
+    color: white;
+    text-align: center;
+}
+
+.worker img {
+    width: 15em;
+}
+
+.worker h3 {
+    letter-spacing: 2px;
+    margin: 90% 0 7% 0;
+}
+
+.worker p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
