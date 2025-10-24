@@ -1,6 +1,4 @@
-#magnifyin-glass-icon, #building-icon, #industrial-icon, #future-icon {
-    background: black;
-}
+
 
 * {
     margin: 0;
@@ -8,25 +6,26 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+html {
+    background-color: white;
+    padding: 0.6em 0.6em;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: rgb(219, 219, 219);
-    padding: 10px 10px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* -------------- HOME PAGE ------------------- */
 
 .home-page {
     background: url("images/pexels-photo-9392381.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 5% 45%;
-    padding: 50px 90px;
-    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    background-position: 5% 40%;
+    padding: 5em;
+    height: 100vh;
 }
 
 nav {
@@ -39,21 +38,20 @@ form {
 }
 
 form input {
-    font-size: 20px;
+    font-size: 1.4em;
     background: none;
     color: grey;
     border: solid 2px grey;
     border-right: None;
-    border-radius: 1px;
     padding: 7px 10px;
-    width: 170px;
+    width: 8em;
     transition: 0.3s;
     outline: none;
 }
 
 form input:hover, form input:focus {
     padding-left: 15px;
-    width: 200px;
+    width: 10em;
 }
 
 #magnifyin-glass-icon-wrapper {
@@ -70,8 +68,8 @@ form input:hover, form input:focus {
     background: grey;
     mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg");
     -webkit-mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg") no-repeat center;
-    height: 20px;
-    width: 20px;
+    height: 1.5em;
+    width: 1.5em;
 }
 
 .navigation a {
@@ -90,32 +88,54 @@ form input:hover, form input:focus {
     border-bottom: solid 2px rgb(255, 187, 0);
 }
 
-h1 {
-    font-size: 90px;
+.home-page h1 {
+    font-size: 5.5em;
     color: rgb(255, 187, 0);
-    margin: 80px 0 0 0;
+    margin: 70px 0 0 0;
 }
 
 .boxes {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin: 70px 0 70px 0;
+    margin: 3em 0;
 }
 
 .box {
     background: rgba(29, 35, 45, 0.6);
     padding: 20px 30px;
-    width: 500px;
+    width: 27%;
+    height: fit-content;
 }
 
 .box h3 {
     font-size: 25px;
-    margin: 0 0 40px 0;
+    margin: -1em 0 2em 0;
 }
 
 .box p {
     font-size: 20px;
+}
+
+.general-icon {
+    background: rgb(255, 187, 0);
+    height: 7em;
+    margin-left: 20em;
+}
+
+#building-icon {
+    mask: url("images/icons/Pictogrammers-Material-Factory.svg");
+    -webkit-mask: url("images/icons/Pictogrammers-Material-Factory.svg") no-repeat center;
+}
+
+#industrial-icon {
+    mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg");
+    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg") no-repeat center;
+}
+
+#future-icon {
+    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
+    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg") no-repeat center;
 }
 
 #more-button {
@@ -135,37 +155,4 @@ h1 {
 #more-button:hover {
     background-position: left bottom;
     color: rgb(50, 50, 50);
-}
-
-#building-icon {
-    mask: url("images/icons/Pictogrammers-Material-Factory.svg");
-    -webkit-mask: url("images/icons/Pictogrammers-Material-Factory.svg") no-repeat center;
-    background: rgb(255, 187, 0);
-    height: 100px;
-    width: 100px;
-    position: relative;
-    left: 310px;
-    top: 20px;
-}
-
-#industrial-icon {
-    mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg");
-    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg") no-repeat center;
-    background: rgb(255, 187, 0);
-    height: 100px;
-    width: 100px;
-    position: relative;
-    left: 310px;
-    top: 20px;
-}
-
-#future-icon {
-    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
-    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg") no-repeat center;
-    background: rgb(255, 187, 0);
-    height: 100px;
-    width: 100px;
-    position: relative;
-    left: 310px;
-    top: 20px;
 }
