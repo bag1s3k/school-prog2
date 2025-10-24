@@ -313,11 +313,6 @@ form input:hover, form input:focus {
     margin-bottom: 1em;
 }
 
-.rd-page-left a {
-    color: var(--almost-black);
-    text-decoration: underline 2px;
-}
-
 .rd-page-right img {
     height: auto;
     width: 25em;
@@ -350,3 +345,5 @@ form input:hover, form input:focus {
     transition: 0.3s;
     cursor: pointer;
 }
+
+/* --------------- FOURTH PAGE ------------------ */
