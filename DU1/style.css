@@ -25,7 +25,7 @@ body {
     background-size: cover;
     background-position: 5% 40%;
     padding: 5em;
-    height: 100vh;
+    height: 100%;
 }
 
 nav {
@@ -171,20 +171,18 @@ form input:hover, form input:focus {
 
 /* -------------- SECOND PAGE -------------- */
 .nd-page {
-    height: 100vh;
     color: rgb(35, 35, 35);
     padding: 5em;
+    display: flex;
 }
 
 .worker {
     background-image: url("images/pexels-photo-6474449.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 30%;
-    float: left;
     color: white;
     text-align: center;
+    padding: 25% 3% 4% 3%;
 }
 
 .worker img {
@@ -193,7 +191,7 @@ form input:hover, form input:focus {
 
 .worker h3 {
     letter-spacing: 2px;
-    margin: 90% 0 7% 0;
+    margin-bottom: 7%;
 }
 
 .worker p {
@@ -201,4 +199,37 @@ form input:hover, form input:focus {
     letter-spacing: 1px;
     line-height: 1.5;
     margin-bottom: 5%;
+    width: max-content;
+}
+
+.split-line {
+    height: 10px;
+    width: 60px;
+    background: rgb(255, 187, 0);
+    margin: auto;
+    display: table;
+}
+
+.nd-page-right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nd-page-text {
+    padding: 5% 7%;
+}
+
+.nd-page-text h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 700;
+}
+
+.nd-page-text p {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
 }
