@@ -269,13 +269,23 @@ form input:hover, form input:focus {
 }
 
 /* ------------------ THIRD PAGE ------------------- */
+.rd-page {
+    display: flex;
+}
 
 .rd-page-left {
     width: 45%;
     padding: 7em;
 }
 
-.rd-page-left h3 {
+.rd-page-right {
+    padding: 7em;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rd-page-left h3, .rd-page-right h3 {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -284,7 +294,12 @@ form input:hover, form input:focus {
     text-align: justify;
 }
 
-.rd-page-left p {
+.rd-page-right h3 {
+    text-align: unset;
+    float: right;
+}
+
+.rd-page-left p, .rd-page-right p {
     font-weight: 500;
     font-size: 1.2em;
     line-height: 1.4;
@@ -292,7 +307,7 @@ form input:hover, form input:focus {
     margin-bottom: 2em;
 }
 
-.rd-page-left img {
+.rd-page-left img, .rd-page-right img {
     height: 20em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     margin-bottom: 1em;
@@ -303,7 +318,28 @@ form input:hover, form input:focus {
     text-decoration: underline 2px;
 }
 
+.rd-page-right img {
+    height: auto;
+    width: 25em;
+    margin-bottom: 7em;
+    align-self: flex-end;
+}
+
+.rd-list-option {
+    display: flex;
+}
+
+.rd-list-option p {
+    margin: 0;
+}
+
 #list-icon {
     mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg");
     -webkit-mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg") no-repeat center;
+    background: var(--their-yellow);
+    mask-size: cover;
+    height: 1em;
+    width: 1em;
+    padding: 5px;
+    margin: 5px 10px 5px 0;
 }
