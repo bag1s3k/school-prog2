@@ -321,12 +321,13 @@ form input:hover, form input:focus {
 .rd-page-right img {
     height: auto;
     width: 25em;
-    margin-bottom: 7em;
+    margin-bottom: 6em;
     align-self: flex-end;
 }
 
 .rd-list-option {
     display: flex;
+    transition: 0.3s;
 }
 
 .rd-list-option p {
@@ -342,4 +343,10 @@ form input:hover, form input:focus {
     width: 1em;
     padding: 5px;
     margin: 5px 10px 5px 0;
+}
+
+.rd-list-option:hover {
+    transform: translateX(5px);
+    transition: 0.3s;
+    cursor: pointer;
 }
