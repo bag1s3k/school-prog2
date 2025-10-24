@@ -187,6 +187,7 @@ form input:hover, form input:focus {
     color: white;
     text-align: center;
     padding: 25% 3% 4% 3%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .worker img {
@@ -259,4 +260,50 @@ form input:hover, form input:focus {
 
 .more-button-2nd:hover {
     color: rgb(236, 236, 236);
+}
+
+/* ----------------- EXTENDED THIRD PAGE -------------------- */
+.extended-rd-page {
+    background: var(--light-grey);
+    color: var(--almost-black)
+}
+
+/* ------------------ THIRD PAGE ------------------- */
+
+.rd-page-left {
+    width: 45%;
+    padding: 7em;
+}
+
+.rd-page-left h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.rd-page-left p {
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.rd-page-left img {
+    height: 20em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    margin-bottom: 1em;
+}
+
+.rd-page-left a {
+    color: var(--almost-black);
+    text-decoration: underline 2px;
+}
+
+#list-icon {
+    mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg");
+    -webkit-mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg") no-repeat center;
 }
