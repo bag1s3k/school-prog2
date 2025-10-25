@@ -347,3 +347,67 @@ form input:hover, form input:focus {
 }
 
 /* --------------- FOURTH PAGE ------------------ */
+.fourth-page h1 {
+    font-size: 7em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.fourth-page p {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 15% 2% 15%;
+}
+
+.fourth-page-containers {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 0 20%;
+}
+
+.fourth-page-container {
+    background: var(--their-yellow);
+    color: white;
+    height: 20em;
+    width: 20em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.fourth-page-container:nth-child(2) {
+    background-image: url("images/worker-with-hard-hat-hammer-building-house_23-2148748857.jpg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth-page-container:nth-child(4) {
+    background-image: url("images/construction-worker-sanding-down-wood-piece_23-2148748861.jpg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth-page-container:nth-child(5) {
+    background-color: var(--light-grey);
+    color: var(--almost-black)
+}
+
+.fourth-page-container:nth-child(6) {
+    background-image: url("images/carpenter-man-working-wood_23-2148748789.jpg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth-page-container h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20% 0 5% 0;
+}
+
+.fourth-page-container p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
