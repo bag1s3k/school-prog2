@@ -181,7 +181,9 @@ form input:hover, form input:focus {
 }
 
 .worker {
-    background-image: url("images/pexels-photo-6474449.jpeg");
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("images/pexels-photo-6474449.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -416,4 +418,62 @@ form input:hover, form input:focus {
 .fourth-page-container p {
     font-size: 1.1em;
     font-weight: 500;
+}
+
+/* --------------- STATS ------------------ */
+.stats {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/fdrt.jpg.jpeg");
+    display: flex;
+    color: white;
+    padding: 7em 0;
+    justify-content: center;
+    gap: 10em;
+    margin-top: 8em;
+}
+
+.stats-icons {
+    background-color: var(--their-yellow);
+    height: 3em;
+    width: 3em;
+    display: table;
+    margin: auto;
+}
+
+#human-icon {
+    mask: url("images/icons/person-sgrepo-com.svg");
+    -webkit-mask: url("images/icons/person-svgrepo-com.svg");
+    mask-size: contain;
+}
+
+#people-icon {
+    mask: url("images/icons/people-team-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/people-team-svgrepo-com.svg");
+    mask-size: contain;
+}
+
+#work-icon {
+    mask: url("images/icons/work-case-filled-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/work-case-filled-svgrepo-com.svg");
+    mask-size: contain;
+}
+
+#award-icon {
+    mask: url("images/icons/award-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/award-svgrepo-com.svg");
+    mask-size: contain;
+}
+
+.stat h2 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.stat p {
+    font-size: 1em;
+    color: var(--their-yellow);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
 }
