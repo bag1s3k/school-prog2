@@ -679,3 +679,84 @@ form input:hover, form input:focus {
 .card-btn2:hover {
     color: white;
 }
+
+/* ------------------- EIGHTH PAGE ------------------------- */
+.eighth-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("images/pexels-photo-5990678.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.eighth-page {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5em 0;
+}
+
+.eighth-page h1 {
+    color: white;
+    margin: 0 0 0.6em 0;
+    font-size: 2em;
+}
+
+.eighth-page p:first-of-type {
+    color: black;
+    margin-bottom: 3em;
+    font-weight: 300;
+}
+
+.eighth-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.eighth-container div {
+    background: white;
+    padding: 1em 2em;
+    box-shadow: rgba(0, 0, 0, 0.1) px 10px 50px;
+    transition: 0.3s;
+}
+
+.eighth-container:hover div:not(:hover){
+    opacity: 0.5;
+}
+
+.eighth-container:hover img:hover {
+    transform: scale(110%) rotateZ(-10deg);
+}
+
+.eighth-container img {
+    clip-path: circle(40%);
+    height: 14em;
+    width: 14em;
+    transition: 0.3s;
+}
+
+.eighth-container p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.wiew-more-btn {
+    background: linear-gradient(to left, transparent 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: solid 1px white;
+    font-weight: 900;
+    font-size: 1em;
+    padding: 1em 2em;
+    align-self: center;
+    margin-top: 2em;
+}
+
+.wiew-more-btn {
+    color: white;
+}
