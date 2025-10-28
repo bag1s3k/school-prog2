@@ -21,6 +21,17 @@ body {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+/* -------------- SHARED ------------- */
+#same-width {
+    width: 1200px;
+}
+
+.page-container {
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+}
+
 /* -------------- HOME PAGE ------------------- */
 
 .home-page {
@@ -28,8 +39,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 5% 40%;
-    padding: 5em;
-    height: 100%;
+    padding: 5em 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -76,14 +89,17 @@ form input:hover, form input:focus {
     width: 1.5em;
 }
 
+.navigation {
+    display: flex;
+    gap: 2em;
+}
+
 .navigation a {
     text-decoration: none;
     font-weight: 700;
-    margin: 0 20px;
     font-size: 25px;
     color: rgb(35, 35, 35);
     transition: 0.2s;
-    display: inline-block;
 }
 
 .navigation a:hover {
@@ -95,28 +111,56 @@ form input:hover, form input:focus {
 .home-page h1 {
     font-size: 5.5em;
     color: var(--their-yellow);
-    margin: 70px 0 0 0;
+    margin: 1.5em 0 0 0;
 }
 
 .boxes {
     display: flex;
-    gap: 30px;
-    justify-content: center;
     margin: 3em 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .box {
-    background: rgba(29, 35, 45, 0.6);
-    padding: 20px 30px;
-    width: 27%;
-    height: fit-content;
+    background: rgba(47, 51, 58, 0.6);
+    padding: 2em 2em 3em 2em;
     transition: 0.3s;
     cursor: pointer;
+    display: flex;
+}
+
+.general-icon {
+    height: 4em;
+    background: var(--their-yellow);
+}
+
+#building-icon {
+    mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg");
+    -webkit-mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+#industrial-icon {
+    mask: url("images/icons/Pictogrammers-Material-Factory.svg");
+    -webkit-mask: url("images/icons/Pictogrammers-Material-Factory.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+#future-icon {
+    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
+    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
 }
 
 .box:hover {
     transform: scale(102%);
-    background: rgba(29, 35, 45, 1);
+    background: rgba(47, 51, 58, 1);
 }
 
 .boxes:hover .box:not(:hover) {
@@ -124,34 +168,17 @@ form input:hover, form input:focus {
     transform: scale(98%);
 }
 
+.st-box-text {
+    margin-top: 2em;
+}
+
 .box h3 {
     font-size: 25px;
-    margin: -1em 0 2em 0;
+    margin: 0 0 1.4em 0;
 }
 
 .box p {
     font-size: 20px;
-}
-
-.general-icon {
-    background: var(--their-yellow);
-    height: 7em;
-    margin-left: 20em;
-}
-
-#building-icon {
-    mask: url("images/icons/Pictogrammers-Material-Factory.svg");
-    -webkit-mask: url("images/icons/Pictogrammers-Material-Factory.svg") no-repeat center;
-}
-
-#industrial-icon {
-    mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg");
-    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Industry.svg") no-repeat center;
-}
-
-#future-icon {
-    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
-    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg") no-repeat center;
 }
 
 .more-button {
@@ -162,7 +189,7 @@ form input:hover, form input:focus {
     width: fit-content;
     padding: 10px 50px;
     font-size: 20px;
-    margin: 20px 0 30px 0; 
+    margin-top: 20px; 
     letter-spacing: 3px;
     cursor: pointer;
     transition: background-position 0.5s ease;
@@ -176,8 +203,8 @@ form input:hover, form input:focus {
 /* -------------- SECOND PAGE -------------- */
 .nd-page {
     color: var(--almost-black);
-    padding: 5em;
     display: flex;
+    min-height: 600px;
 }
 
 .worker {
@@ -185,15 +212,20 @@ form input:hover, form input:focus {
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url("images/pexels-photo-6474449.jpeg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     color: white;
-    text-align: center;
-    padding: 25% 3% 4% 3%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 5em 2em 2em 3em;
+    text-align: center;
 }
 
 .worker img {
     width: 15em;
+    align-self: center;
 }
 
 .worker h3 {
@@ -220,22 +252,26 @@ form input:hover, form input:focus {
 .nd-page-right {
     display: flex;
     flex-wrap: wrap;
-    padding: 5% 7% 0 5%;
+    padding: 5% 0 0 5%;
+    line-height: 1.4;
 }
 
 .nd-page-text h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 20px;
     display: block;
     font-weight: 700;
 }
 
 .nd-page-text p, .nd-page-box p {
-    font-size: 1.3em;
-    font-weight: 400;
+    font-size: 1.2em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1em;
+}
+
+.nd-page-box p {
+    margin: 0;
 }
 
 .nd-page-box {
@@ -245,7 +281,7 @@ form input:hover, form input:focus {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: auto;
+    margin-top: 50px;
 }
 
 .nd-page-box p {
@@ -277,11 +313,9 @@ form input:hover, form input:focus {
 
 .rd-page-left {
     width: 45%;
-    padding: 7em;
 }
 
 .rd-page-right {
-    padding: 7em;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -352,22 +386,20 @@ form input:hover, form input:focus {
 .fourth-page h1 {
     font-size: 7em;
     text-align: center;
-    margin-bottom: 0.5em;
 }
 
 .fourth-page p {
     font-size: 1.3em;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
-    margin: 0 15% 2% 15%;
+    margin: 1em 0;
 }
 
 .fourth-page-containers {
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 20px;
+    gap: 20px;
     justify-content: center;
-    margin: 0 20%;
 }
 
 .fourth-page-container {
@@ -377,6 +409,7 @@ form input:hover, form input:focus {
     width: 20em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     transition: 0.3s;
+    padding: 1em;
 }
 
 .fourth-page-container:hover {
@@ -417,7 +450,7 @@ form input:hover, form input:focus {
 
 .fourth-page-container p {
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* --------------- STATS ------------------ */
@@ -430,7 +463,8 @@ form input:hover, form input:focus {
     padding: 7em 0;
     justify-content: center;
     gap: 10em;
-    margin-top: 8em;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .stats-icons {
