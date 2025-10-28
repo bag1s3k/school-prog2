@@ -545,6 +545,7 @@ form input:hover, form input:focus {
 .sixth-content img {
     height: 21.2em;
     aspect-ratio: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .sixth-content-right {
@@ -567,4 +568,114 @@ form input:hover, form input:focus {
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.5em;
+}
+
+/* ----------------------- SEVENTH PAGE ----------------------- */
+.seventh-page {
+    color: var(--almost-black);
+}
+
+.seventh-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seventh-top h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.seventh-top p {
+    font-size: 1.2em;
+    width: 30em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.seventh-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sevent-img-container {
+    overflow: hidden;
+    width: 50%;
+}
+
+.sevent-img-container img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-1em) scale(101%);
+}
+
+.sevent-img-container img:hover {
+    transform: scale(105%);
+}
+
+.card div {
+    padding: 2em;
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 1.2em;
+}
+
+.card h2 {
+    font-size: 3em;
+}
+
+.card p {
+    line-height: 2.5em;
+}
+
+.card div:nth-child(1) {
+    background: rgb(255, 187, 0, 0.5);
+}
+
+.card div:nth-child(2) {
+    background: rgb(255, 187, 0, 0.1);
+}
+
+.card:nth-child(2) div:nth-child(1){
+    background: rgb(255, 187, 0);
+    color: white;
+}
+
+.card:nth-child(2) div:nth-child(2) {
+    background: rgb(255, 187, 0, 0.3);
+}
+
+.card-btn1 {
+    border: none;
+    background: linear-gradient(to left, rgb(255, 187, 0, 0.5) 50%, rgb(255, 187, 0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding: 0 2em;
+}
+
+.card-btn2 {
+    border: none;
+    background: linear-gradient(to left, rgb(255, 187, 0) 50%, rgb(236, 173, 0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding: 0 2em;
+    color: white;
+}
+
+.card-btn2:hover {
+    color: white;
 }
