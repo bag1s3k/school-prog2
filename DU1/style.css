@@ -453,17 +453,22 @@ form input:hover, form input:focus {
 }
 
 /* --------------- STATS ------------------ */
-.stats {
+.stats-bg {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/fdrt.jpg.jpeg");
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/fdrt.jpg.jpeg");
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.stats {
     display: flex;
     color: white;
     padding: 7em 0;
-    justify-content: center;
-    gap: 10em;
-    background-repeat: no-repeat;
-    background-size: cover;
+    justify-content: space-between;
 }
 
 .stats-icons {
