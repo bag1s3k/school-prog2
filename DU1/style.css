@@ -396,17 +396,16 @@ form input:hover, form input:focus {
 }
 
 .fourth-page-containers {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-content: center;
 }
 
 .fourth-page-container {
+    aspect-ratio: 1;
     background: var(--their-yellow);
     color: white;
-    height: 20em;
-    width: 20em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     transition: 0.3s;
     padding: 1em;
@@ -441,7 +440,7 @@ form input:hover, form input:focus {
 }
 
 .fourth-page-container h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 800;
     letter-spacing: 2px;
     text-align: center;
@@ -449,7 +448,7 @@ form input:hover, form input:focus {
 }
 
 .fourth-page-container p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 400;
 }
 
