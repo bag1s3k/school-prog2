@@ -515,3 +515,56 @@ form input:hover, form input:focus {
     letter-spacing: 2px;
     text-align: center;
 }
+
+/* --------------- SIXTH PAGE ------------------- */
+.sixth-page {
+    color: var(--almost-black);
+}
+
+.sixth-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.sixth-nav p {
+    padding: 0.7em 5em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.sixth-nav p:nth-child(1) {
+    color: white;
+    background-color: var(--their-yellow);
+}
+
+.sixth-content {
+    display: flex;
+}
+
+.sixth-content img {
+    height: 21.2em;
+    aspect-ratio: 1;
+}
+
+.sixth-content-right {
+    margin-left: 5em;
+}
+
+.sixth-content-right h2 {
+    font-size: 2em;
+}
+
+.sixth-content-right p {
+    margin: 1em 0;
+    color: grey;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.sixth-content-right li {
+    list-style-position: inside;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
