@@ -716,6 +716,7 @@ form input:hover, form input:focus {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1em;
+    cursor: pointer;
 }
 
 .eighth-container div {
@@ -727,6 +728,7 @@ form input:hover, form input:focus {
 
 .eighth-container:hover div:not(:hover){
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .eighth-container:hover img:hover {
