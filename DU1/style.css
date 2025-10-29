@@ -762,3 +762,67 @@ form input:hover, form input:focus {
 .wiew-more-btn {
     color: white;
 }
+
+/* ------------------------ NINTH PAGE ---------------------- */
+.ninth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--almost-black)
+}
+
+.page-container {
+    background: var(--light-grey);
+}
+
+.ninth-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.human-cards {
+    display: flex;
+    width: 60em;
+    gap: 1em;
+}
+
+.human-card {
+    background: white;
+    padding: 4em 3em 2em 3em;
+    border-radius: 2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.human-card:hover {
+    transform: scale(110%);
+}
+
+.human-card p {
+    line-height: 1.5em;
+}
+
+.human-card-txt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -1.3em;
+}
+
+.ninth-page img {
+    clip-path: circle(30%);
+    height: 6em;
+    object-fit: contain;
+    aspect-ratio: 1;
+}
+
+.ninth-btn {
+    margin-top: 3em;
+    padding: 0.7em 1.2em;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
