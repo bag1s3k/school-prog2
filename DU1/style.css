@@ -108,6 +108,10 @@ form input:hover, form input:focus {
     border-bottom: solid 5px var(--their-yellow);
 }
 
+.navigation a:active {
+    transform: scale(95%);
+}
+
 .home-page h1 {
     font-size: 5.5em;
     color: var(--their-yellow);
@@ -192,12 +196,16 @@ form input:hover, form input:focus {
     margin-top: 20px; 
     letter-spacing: 3px;
     cursor: pointer;
-    transition: background-position 0.5s ease;
+    transition: 0.3s;
 }
 
 .more-button:hover {
     background-position: left bottom;
     color: var(--almost-black);
+}
+
+.more-button:active {
+    transform: scale(95%);
 }
 
 /* -------------- SECOND PAGE -------------- */
@@ -735,6 +743,10 @@ form input:hover, form input:focus {
     transform: scale(110%) rotateZ(-10deg);
 }
 
+.eighth-container div:active {
+    transform: scale(95%);
+}
+
 .eighth-container img {
     clip-path: circle(40%);
     height: 14em;
@@ -797,6 +809,10 @@ form input:hover, form input:focus {
 
 .human-card:hover {
     transform: scale(110%);
+}
+
+.human-card:active {
+    transform: scale(105%);
 }
 
 .human-card p {
