@@ -108,6 +108,10 @@ form input:hover, form input:focus {
     border-bottom: solid 5px var(--their-yellow);
 }
 
+.navigation a:active {
+    transform: scale(95%);
+}
+
 .home-page h1 {
     font-size: 5.5em;
     color: var(--their-yellow);
@@ -192,12 +196,16 @@ form input:hover, form input:focus {
     margin-top: 20px; 
     letter-spacing: 3px;
     cursor: pointer;
-    transition: background-position 0.5s ease;
+    transition: 0.3s;
 }
 
 .more-button:hover {
     background-position: left bottom;
     color: var(--almost-black);
+}
+
+.more-button:active {
+    transform: scale(95%);
 }
 
 /* -------------- SECOND PAGE -------------- */
@@ -716,6 +724,7 @@ form input:hover, form input:focus {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1em;
+    cursor: pointer;
 }
 
 .eighth-container div {
@@ -727,10 +736,15 @@ form input:hover, form input:focus {
 
 .eighth-container:hover div:not(:hover){
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .eighth-container:hover img:hover {
     transform: scale(110%) rotateZ(-10deg);
+}
+
+.eighth-container div:active {
+    transform: scale(95%);
 }
 
 .eighth-container img {
@@ -759,4 +773,144 @@ form input:hover, form input:focus {
 
 .wiew-more-btn {
     color: white;
+}
+
+/* ------------------------ NINTH PAGE ---------------------- */
+.ninth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--almost-black)
+}
+
+.page-container {
+    background: var(--light-grey);
+}
+
+.ninth-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.human-cards {
+    display: flex;
+    width: 60em;
+    gap: 1em;
+}
+
+.human-card {
+    background: white;
+    padding: 4em 3em 2em 3em;
+    border-radius: 2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.human-card:hover {
+    transform: scale(110%);
+}
+
+.human-card:active {
+    transform: scale(105%);
+}
+
+.human-card p {
+    line-height: 1.5em;
+}
+
+.human-card-txt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -1.3em;
+}
+
+.ninth-page img {
+    clip-path: circle(30%);
+    height: 6em;
+    object-fit: contain;
+    aspect-ratio: 1;
+}
+
+.ninth-btn {
+    margin-top: 3em;
+    padding: 0.7em 1.2em;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* ------------------ LAST PAGE ----------------- */
+.last-bg {
+    background: url("images/pexels-photo-3204506.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-position: 50% 48%;
+}
+
+.last-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 5em;
+}
+
+.last-page-box {
+    height: 20em;
+    width: 20em;
+    background: white;
+    color: var(--almost-black);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-page-box:nth-child(2) {
+    background: var(--their-yellow);
+    color: white;
+}
+
+.last-page-box div {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 1em;
+    mask-repeat: no-repeat;
+}
+
+.last-page-box h2 {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+}
+
+.last-page-box p {
+    font-weight: 400;
+}
+
+.position-icon {
+    mask: url("images/icons/location-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/location-svgrepo-com.svg");
+    mask-size: contain;
+    background: black;
+}
+
+.phone-icon {
+    mask: url("images/icons/mobile-phone-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/mobile-phone-svgrepo-com.svg");
+    mask-size: contain;
+    background: white;
+}
+
+.document-icon {
+    mask: url("images/icons/document-ui-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/document-ui-svgrepo-com.svg");
+    mask-size: contain;
+    background: black;
 }
