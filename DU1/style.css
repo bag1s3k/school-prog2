@@ -842,3 +842,75 @@ form input:hover, form input:focus {
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+/* ------------------ LAST PAGE ----------------- */
+.last-bg {
+    background: url("images/pexels-photo-3204506.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-position: 50% 48%;
+}
+
+.last-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 5em;
+}
+
+.last-page-box {
+    height: 20em;
+    width: 20em;
+    background: white;
+    color: var(--almost-black);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-page-box:nth-child(2) {
+    background: var(--their-yellow);
+    color: white;
+}
+
+.last-page-box div {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 1em;
+    mask-repeat: no-repeat;
+}
+
+.last-page-box h2 {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+}
+
+.last-page-box p {
+    font-weight: 400;
+}
+
+.position-icon {
+    mask: url("images/icons/location-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/location-svgrepo-com.svg");
+    mask-size: contain;
+    background: black;
+}
+
+.phone-icon {
+    mask: url("images/icons/mobile-phone-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/mobile-phone-svgrepo-com.svg");
+    mask-size: contain;
+    background: white;
+}
+
+.document-icon {
+    mask: url("images/icons/document-ui-svgrepo-com.svg");
+    -webkit-mask: url("images/icons/document-ui-svgrepo-com.svg");
+    mask-size: contain;
+    background: black;
+}
