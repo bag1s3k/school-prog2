@@ -77,16 +77,9 @@ form input:hover, form input:focus {
     padding: 8px 10px 0 0;
 }
 
-#magnifyin-glass-icon-wrapper:hover {
+nav img {
+    height: 24px;
     cursor: pointer;
-}
-
-#magnifyin-glass-icon {
-    background: grey;
-    mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg");
-    -webkit-mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg") no-repeat center;
-    height: 1.5em;
-    width: 1.5em;
 }
 
 .navigation {
@@ -133,35 +126,6 @@ form input:hover, form input:focus {
     display: flex;
 }
 
-.general-icon {
-    height: 4em;
-    background: var(--their-yellow);
-}
-
-#building-icon {
-    mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg");
-    -webkit-mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-}
-
-#industrial-icon {
-    mask: url("images/icons/Pictogrammers-Material-Factory.svg");
-    -webkit-mask: url("images/icons/Pictogrammers-Material-Factory.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-}
-
-#future-icon {
-    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
-    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-}
-
 .box:hover {
     transform: scale(102%);
     background: rgba(47, 51, 58, 1);
@@ -183,6 +147,10 @@ form input:hover, form input:focus {
 
 .box p {
     font-size: 20px;
+}
+
+.box img {
+    height: 50px;
 }
 
 .more-button {
@@ -351,6 +319,7 @@ form input:hover, form input:focus {
     margin-bottom: 2em;
 }
 
+
 .rd-page-left img, .rd-page-right img {
     height: 20em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -373,21 +342,18 @@ form input:hover, form input:focus {
     margin: 0;
 }
 
-#list-icon {
-    mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg");
-    -webkit-mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg") no-repeat center;
-    background: var(--their-yellow);
-    mask-size: cover;
-    height: 1em;
-    width: 1em;
-    padding: 5px;
-    margin: 5px 10px 5px 0;
-}
-
 .rd-list-option:hover {
     transform: translateX(5px);
     transition: 0.3s;
     cursor: pointer;
+}
+
+.rd-list img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0;
+    box-shadow: none;
+    margin-right: 8px;
 }
 
 /* --------------- FOURTH PAGE ------------------ */
@@ -479,36 +445,10 @@ form input:hover, form input:focus {
     justify-content: space-between;
 }
 
-.stats-icons {
-    background-color: var(--their-yellow);
-    height: 3em;
-    width: 3em;
+.stat img {
+    height: 60px;
     display: table;
     margin: auto;
-}
-
-#human-icon {
-    mask: url("images/icons/person-sgrepo-com.svg");
-    -webkit-mask: url("images/icons/person-svgrepo-com.svg");
-    mask-size: contain;
-}
-
-#people-icon {
-    mask: url("images/icons/people-team-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/people-team-svgrepo-com.svg");
-    mask-size: contain;
-}
-
-#work-icon {
-    mask: url("images/icons/work-case-filled-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/work-case-filled-svgrepo-com.svg");
-    mask-size: contain;
-}
-
-#award-icon {
-    mask: url("images/icons/award-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/award-svgrepo-com.svg");
-    mask-size: contain;
 }
 
 .stat h2 {
@@ -894,23 +834,7 @@ form input:hover, form input:focus {
     font-weight: 400;
 }
 
-.position-icon {
-    mask: url("images/icons/location-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/location-svgrepo-com.svg");
-    mask-size: contain;
-    background: black;
-}
-
-.phone-icon {
-    mask: url("images/icons/mobile-phone-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/mobile-phone-svgrepo-com.svg");
-    mask-size: contain;
-    background: white;
-}
-
-.document-icon {
-    mask: url("images/icons/document-ui-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/document-ui-svgrepo-com.svg");
-    mask-size: contain;
-    background: black;
+.last-page-box img {
+    height: 70px;
+    margin-bottom: 20px;
 }
