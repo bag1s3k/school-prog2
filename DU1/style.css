@@ -319,6 +319,7 @@ nav img {
     margin-bottom: 2em;
 }
 
+
 .rd-page-left img, .rd-page-right img {
     height: 20em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -341,21 +342,18 @@ nav img {
     margin: 0;
 }
 
-#list-icon {
-    mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg");
-    -webkit-mask: url("images/icons/Microsoft-Fluentui-Emoji-Mono-Check-Mark.svg") no-repeat center;
-    background: var(--their-yellow);
-    mask-size: cover;
-    height: 1em;
-    width: 1em;
-    padding: 5px;
-    margin: 5px 10px 5px 0;
-}
-
 .rd-list-option:hover {
     transform: translateX(5px);
     transition: 0.3s;
     cursor: pointer;
+}
+
+.rd-list img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0;
+    box-shadow: none;
+    margin-right: 8px;
 }
 
 /* --------------- FOURTH PAGE ------------------ */
