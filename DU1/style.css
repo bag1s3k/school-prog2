@@ -445,36 +445,10 @@ nav img {
     justify-content: space-between;
 }
 
-.stats-icons {
-    background-color: var(--their-yellow);
-    height: 3em;
-    width: 3em;
+.stat img {
+    height: 60px;
     display: table;
     margin: auto;
-}
-
-#human-icon {
-    mask: url("images/icons/person-sgrepo-com.svg");
-    -webkit-mask: url("images/icons/person-svgrepo-com.svg");
-    mask-size: contain;
-}
-
-#people-icon {
-    mask: url("images/icons/people-team-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/people-team-svgrepo-com.svg");
-    mask-size: contain;
-}
-
-#work-icon {
-    mask: url("images/icons/work-case-filled-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/work-case-filled-svgrepo-com.svg");
-    mask-size: contain;
-}
-
-#award-icon {
-    mask: url("images/icons/award-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/award-svgrepo-com.svg");
-    mask-size: contain;
 }
 
 .stat h2 {
@@ -860,23 +834,7 @@ nav img {
     font-weight: 400;
 }
 
-.position-icon {
-    mask: url("images/icons/location-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/location-svgrepo-com.svg");
-    mask-size: contain;
-    background: black;
-}
-
-.phone-icon {
-    mask: url("images/icons/mobile-phone-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/mobile-phone-svgrepo-com.svg");
-    mask-size: contain;
-    background: white;
-}
-
-.document-icon {
-    mask: url("images/icons/document-ui-svgrepo-com.svg");
-    -webkit-mask: url("images/icons/document-ui-svgrepo-com.svg");
-    mask-size: contain;
-    background: black;
+.last-page-box img {
+    height: 70px;
+    margin-bottom: 20px;
 }
