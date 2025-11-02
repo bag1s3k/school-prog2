@@ -77,16 +77,9 @@ form input:hover, form input:focus {
     padding: 8px 10px 0 0;
 }
 
-#magnifyin-glass-icon-wrapper:hover {
+nav img {
+    height: 24px;
     cursor: pointer;
-}
-
-#magnifyin-glass-icon {
-    background: grey;
-    mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg");
-    -webkit-mask: url("images/icons/Fa-Team-Fontawesome-FontAwesome-Magnifying-Glass.svg") no-repeat center;
-    height: 1.5em;
-    width: 1.5em;
 }
 
 .navigation {
@@ -133,35 +126,6 @@ form input:hover, form input:focus {
     display: flex;
 }
 
-.general-icon {
-    height: 4em;
-    background: var(--their-yellow);
-}
-
-#building-icon {
-    mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg");
-    -webkit-mask: url("images/icons/Bootstrap-Bootstrap-Bootstrap-buildings-fill.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-}
-
-#industrial-icon {
-    mask: url("images/icons/Pictogrammers-Material-Factory.svg");
-    -webkit-mask: url("images/icons/Pictogrammers-Material-Factory.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-}
-
-#future-icon {
-    mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
-    -webkit-mask: url("images/icons/Roundicons-100-Free-Solid-Home.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-}
-
 .box:hover {
     transform: scale(102%);
     background: rgba(47, 51, 58, 1);
@@ -183,6 +147,10 @@ form input:hover, form input:focus {
 
 .box p {
     font-size: 20px;
+}
+
+.box img {
+    height: 50px;
 }
 
 .more-button {
