@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first-page {
+    background: url("images/people.png");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.first-page nav {
+    display: flex;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.first-page img {
+    height: 30px;
+}
+
+.first-page .hrefs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.first-page .hrefs a {
+    text-decoration: none;
+    color: white;
+}
+
+.first-page .container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.first-page .button {
+    padding: 20px 30px;
+    background: blue;
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.first-page .obal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-page {
+    background: blue;
+    display: flex;
+    padding: 50px 30px;
+}
+
+.second-page .left-side {
+    width: 30%;
+    height: 100%;
+    background: green;
+}
+
+.second-page .right-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.second-page .right-side .box {
+    width: 400px;
+    padding: 30px;
+    background: red;
+}
