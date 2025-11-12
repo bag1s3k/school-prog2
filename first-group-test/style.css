@@ -4,6 +4,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .first-page {
     background: url("images/people.png");
     height: 100vh;
@@ -13,6 +14,8 @@
     background-size: cover;
     color: white;
 =======
+=======
+>>>>>>> 64b8ac2 (idk stash pop)
 body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -32,11 +35,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+<<<<<<< HEAD
 >>>>>>> d41a00e (idk stash pop)
+=======
+>>>>>>> 64b8ac2 (idk stash pop)
 }
 
 .first-page nav {
     display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
     padding: 20px 50px;
     align-items: center;
@@ -44,10 +51,15 @@ body {
     flex-direction: row;
     padding: 2em 4em;
 >>>>>>> d41a00e (idk stash pop)
+=======
+    flex-direction: row;
+    padding: 2em 4em;
+>>>>>>> 64b8ac2 (idk stash pop)
     justify-content: space-between;
     border-bottom: 1px solid white;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .first-page img {
     height: 30px;
@@ -112,6 +124,8 @@ body {
     padding: 30px;
     background: red;
 =======
+=======
+>>>>>>> 64b8ac2 (idk stash pop)
 .first-page nav img {
     height: 30px;
     margin: 0 0.3em;
@@ -169,5 +183,8 @@ body {
     padding: 1em 2em;
     border-radius: 50px;
     font-weight: 900;
+<<<<<<< HEAD
 >>>>>>> d41a00e (idk stash pop)
+=======
+>>>>>>> 64b8ac2 (idk stash pop)
 }
