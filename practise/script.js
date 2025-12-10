@@ -4,23 +4,39 @@
 
 /* 31) Po kliknutí na tlačítko zobraz alert „Ahoj světe!“.
       - Vytvoř funkci, která zobrazí alert.
-      - Použij událost onclick nebo addEventListener.
+      - Použij událost onclick nebo addEventListener.    
 */
+function greet() {
+    alert("Ahoj světe!");
+}
+document.getElementById("btn31").addEventListener("click", greet);
 
 /* 32) Po kliknutí na tlačítko změň text vybraného HTML elementu.
       - Napiš funkci, která změní .textContent nebo .innerText.
       - Vyzkoušej použití arrow funkce.
 */
+const changeText = () => document.getElementById("text32").innerText = "Změněný text";
+document.getElementById("btn32").addEventListener("click", changeText);
 
 /* 33) Vypiš do <div> aktuální čas, který se bude každou sekundu aktualizovat.
       - Použij setInterval a vlastní funkci pro získání času.
       - Funkce by měla vracet formátovaný čas (HH:MM:SS).
 */
+timeDisplay = document.getElementById("clock33")
+setInterval(() => timeDisplay.innerText = new Date().toLocaleTimeString(), 1000);
+timeDisplay.innerText = new Date().toLocaleTimeString();
 
 /* 34) Po kliknutí na tlačítko změň barvu pozadí celé stránky.
       - Vytvoř funkci s parametrem (barva).
       - Vyzkoušej nastavit hodnotu přes document.body.style.
 */
+const changeBackgroundColor = (color) => {
+    document.body.style.backgroundColor = color;
+};
+
+document.getElementById('btn34').addEventListener('click', () => {
+    changeBackgroundColor('lightblue');
+});
 
 /* 35) Po najetí myší na obrázek ho zvětši.
       - Použij eventy mouseover a mouseout.
