@@ -2,3 +2,49 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fixed-width {
+    width: 60%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav img {
+    height: 30px;
+    margin: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-content h1 {
+    font-size: 35px;
+}
+
+.nav-content .hrefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-content .hrefs a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 20px;
+}
