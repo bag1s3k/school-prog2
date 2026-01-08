@@ -3,69 +3,97 @@
     padding: 0;
 }
 
-html, body {
+body {
+    padding: 2em 4em;
     font-family: 'Courier New', Courier, monospace;
-    height: 100%;
-    background: rgb(255, 255, 255);
+    background: rgb(240, 240, 240);
 }
 
-/* ------------------ SHARED ---------------- */
-.fixed-width {
-    width: 60%;
-}
-
-/* ------------------- FIRST PAGE ------------------- */
-nav {
-    margin: 50px 0 0 0;
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
 }
 
-nav img {
-    height: 30px;
-    margin: 10px 0;
-}
-
-.nav-content {
+.nav-style {
+    background: white;
+    border-radius: 20px;
+    padding: 1em 4em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
 }
 
-.nav-content h1 {
+.nav-style h1 {
     font-size: 3em;
 }
 
-.nav-content .hrefs {
+.nav-style img {
+    height: 50px;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0.5em 1.5em;
+    margin: 0.5em 0;
+    background: rgb(230, 230, 230);
+}
+
+.search-container input {
+    border: none;
+    font-size: 1.6em;
+    background: none;
+}
+
+.search-container input:focus {
+    outline: none;
+    color: rgb(83, 83, 83);
+}
+
+.nav-style .right-site {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    gap: 2em;
 }
 
-.nav-content .hrefs a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    margin: 10px;
-    font-size: 1.4em;
+.nav-style .right-site button {
+    border: none;
+    padding: 15px 35px;
+    border-radius: 20px;
+    background: rgb(255, 148, 148);
+    font-size: 1.5em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: 'Courier New';
+    font-weight: 900;
 }
 
-.first-page {
-    background: url("images/Sport-Illustration-Graphics-cut.jpg");
-    background-position: 30% 20%;
-    height: 80%;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+.items-container {
+    margin-top: 4em;
 }
 
-.first-page .info {
-    width: 550px;
-    margin: 13% 0 0 55%;
-    font-size: 1.59em;
+.card {
+    width: 20em;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: "Exo 2";
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.card div {
+    margin: 1em 2em;
+}
+
+.card span {
+    font-weight: 700;
 }
