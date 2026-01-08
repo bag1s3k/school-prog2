@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
+body {
+    padding: 2em 4em;
     font-family: 'Courier New', Courier, monospace;
     background: rgb(240, 240, 240);
 }
@@ -16,7 +16,6 @@ html, body {
 
 .nav-style {
     background: white;
-    margin: 2em 4em;
     border-radius: 20px;
     padding: 1em 4em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
