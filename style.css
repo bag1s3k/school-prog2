@@ -70,15 +70,21 @@ body {
 }
 
 .items-container {
-    margin-top: 4em;
+    column-width: 18em;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    width: 100%;
 }
 
 .card {
-    width: 20em;
     background: white;
     border-radius: 20px;
     overflow: hidden;
     font-family: "Exo 2";
+    margin-bottom: 1em;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 .card img {
