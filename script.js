@@ -1,169 +1,146 @@
-const cardsContainer = document.getElementsByClassName("items-container")[0]
+/* ============================================
+   🔵 ÚKOLY 31–40: Funkce, události a práce s DOM
+   ============================================ */
 
-const cards = [
-    {
-        imgSrc: "images/soccer-ball.jpg",
-        title: "Soccer ball",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsa delectus explicabo placeat ab nihil. Deserunt, minus fuga.",
-        amount: 5,
-        timetable: "25.1. - 25.2."
-    },
-    {
-        imgSrc: "images/basketball-ball.avif",
-        title: "Basketball",
-        description: "Durable basketball suitable for indoor and outdoor courts.",
-        amount: 8,
-        timetable: "1.2. - 1.3."
-    },
-    {
-        imgSrc: "images/tennis-racket.png",
-        title: "Tennis racket",
-        description: "Lightweight racket for beginners and intermediate players.",
-        amount: 4,
-        timetable: "10.2. - 10.3."
-    },
-    {
-        imgSrc: "images/tennis-ball.png",
-        title: "Tennis balls",
-        description: "Set of high-quality tennis balls for training and matches.",
-        amount: 20,
-        timetable: "5.2. - 5.4."
-    },
-    {
-        imgSrc: "images/volleyball-ball.jpg",
-        title: "Volleyball",
-        description: "Soft-touch volleyball ideal for school and club use.",
-        amount: 6,
-        timetable: "12.2. - 12.3."
-    },
-    {
-        imgSrc: "images/badminton-racket.webp",
-        title: "Badminton racket",
-        description: "Carbon frame racket for fast and precise shots.",
-        amount: 10,
-        timetable: "15.2. - 15.4."
-    },
-    {
-        imgSrc: "images/shuttlecock.jpg",
-        title: "Shuttlecocks",
-        description: "Pack of durable shuttlecocks for regular training.",
-        amount: 30,
-        timetable: "15.2. - 30.4."
-    },
-    {
-        imgSrc: "images/baseball-bat.webp",
-        title: "Baseball bat",
-        description: "Aluminium bat suitable for beginners.",
-        amount: 3,
-        timetable: "20.2. - 20.3."
-    },
-    {
-        imgSrc: "images/baseball-glove.jpg",
-        title: "Baseball glove",
-        description: "Comfortable glove for training and matches.",
-        amount: 5,
-        timetable: "20.2. - 20.4."
-    },
-    {
-        imgSrc: "images/boxing-gloves.jpg",
-        title: "Boxing gloves",
-        description: "Padded gloves for safe boxing training.",
-        amount: 7,
-        timetable: "1.3. - 1.5."
-    },
-    {
-        imgSrc: "images/skipping-rope.avif",
-        title: "Skipping rope",
-        description: "Adjustable rope for cardio and conditioning.",
-        amount: 15,
-        timetable: "1.2. - 30.4."
-    },
-    {
-        imgSrc: "images/yoga-mat.jpg",
-        title: "Yoga mat",
-        description: "Non-slip mat for yoga, pilates and stretching.",
-        amount: 12,
-        timetable: "5.2. - 5.5."
-    },
-    {
-        imgSrc: "images/dumbbells.webp",
-        title: "Dumbbells",
-        description: "Set of dumbbells for strength training.",
-        amount: 10,
-        timetable: "10.2. - 10.6."
-    },
-    {
-        imgSrc: "images/kettlebell.jpg",
-        title: "Kettlebell",
-        description: "Cast iron kettlebell for functional workouts.",
-        amount: 6,
-        timetable: "10.2. - 10.6."
-    },
-    {
-        imgSrc: "images/resistance-band.webp",
-        title: "Resistance band",
-        description: "Elastic band for rehabilitation and fitness.",
-        amount: 25,
-        timetable: "1.2. - 1.6."
-    },
-    {
-        imgSrc: "images/hockey-stick.webp",
-        title: "Hockey stick",
-        description: "Durable hockey stick for recreational play.",
-        amount: 5,
-        timetable: "15.2. - 15.3."
-    },
-    {
-        imgSrc: "images/pingpong-paddle.webp",
-        title: "Table tennis paddle",
-        description: "Paddle with good grip for beginners.",
-        amount: 12,
-        timetable: "20.2. - 20.4."
-    },
-    {
-        imgSrc: "images/pingpong-ball.webp",
-        title: "Table tennis balls",
-        description: "Set of table tennis balls for training.",
-        amount: 50,
-        timetable: "20.2. - 20.5."
-    },
-    {
-        imgSrc: "images/swimming-goggles.webp",
-        title: "Swimming goggles",
-        description: "Anti-fog goggles for comfortable swimming.",
-        amount: 14,
-        timetable: "1.3. - 1.6."
-    },
-    {
-        imgSrc: "images/swim-cap.jpg",
-        title: "Swim cap",
-        description: "Silicone swim cap for pool training.",
-        amount: 20,
-        timetable: "1.3. - 1.6."
-    },
-    {
-        imgSrc: "images/running-cones.jpg",
-        title: "Training cones",
-        description: "Plastic cones for drills and agility training.",
-        amount: 30,
-        timetable: "5.2. - 5.7."
-    }
-];
+/* 31) Po kliknutí na tlačítko zobraz alert „Ahoj světe!“.
+      - Vytvoř funkci, která zobrazí alert.
+      - Použij událost onclick nebo addEventListener.
+*/
+const ex31 = document.getElementById("ukol31");
+ex31.addEventListener("click", ex31Func);
 
+function ex31Func() {
+    alert("Ahoj světe!");
+};
 
-for (let card of cards) {
-    const cardHTML = `
-    <div class="card">
-        <img src="${card.imgSrc}">
-        <div>
-            <h2>${card.title}</h2>
-            <p>${card.description}</p>
-            <br>
-            <p><span>Available amounts: </span>${card.amount}</p>
-            <p><span>Date: </span>${card.timetable}</p>
-        </div>
-    </div>
-    `
+/* 32) Po kliknutí na tlačítko změň text vybraného HTML elementu.
+      - Napiš funkci, která změní .textContent nebo .innerText.
+      - Vyzkoušej použití arrow funkce.
+*/
+const ex32 = document.getElementById("ukol32");
+ex32.addEventListener("click", ex32Func);
 
-    cardsContainer.innerHTML += cardHTML
+function ex32Func() {
+    document.getElementById("text32").innerText = "Hello world";
+};
+
+/* 33) Vypiš do <div> aktuální čas, který se bude každou sekundu aktualizovat.
+      - Použij setInterval a vlastní funkci pro získání času.
+      - Funkce by měla vracet formátovaný čas (HH:MM:SS).
+*/
+setInterval(ex33Timer, 1000);
+function ex33Timer() {
+    const d = new Date();
+    document.getElementById("clock33").innerHTML = d.toLocaleTimeString();
 }
+
+/* 34) Po kliknutí na tlačítko změň barvu pozadí celé stránky.
+      - Vytvoř funkci s parametrem (barva).
+      - Vyzkoušej nastavit hodnotu přes document.body.style.
+*/
+const ex34 = document.getElementById("ukol34");
+ex34.addEventListener("click", function() {
+    const color = prompt("Enter color: ");
+    ex34Func(color);
+})
+
+function ex34Func(color) {
+    document.body.style.color = color
+}
+
+/* 35) Po najetí myší na obrázek ho zvětši.
+      - Použij eventy mouseover a mouseout.
+      - Změnu proveď pomocí třídy v CSS nebo style.width v JS.
+*/
+
+/* 36) Po odeslání formuláře vypiš hodnoty inputů do konzole.
+      - Zakázat přirozené odeslání formuláře pomocí event.preventDefault().
+      - Použij funkci, která načte hodnoty inputů.
+*/
+
+/* 37) Vytvoř jednoduché „počítadlo kliknutí“.
+      - Po každém kliknutí zvýší číslo o 1 a zobraz ho v HTML.
+      - Proměnná se musí nacházet ve správném scope.
+*/
+
+/* 38) Po kliknutí na tlačítko skryj nebo zobraz text.
+      - Můžeš použít classList.toggle().
+      - Zvaž použití anonymní nebo arrow funkce.
+*/
+
+/* 39) Validuj formulář – zkontroluj, jestli je vyplněné jméno a e-mail.
+      - Pokud není validní, zobraz chybovou hlášku.
+      - Použij jednoduchou podmínku a funkci validateForm().
+*/
+
+/* 40) Pomocí slideru (input type="range") měň velikost písma textu.
+      - Po změně hodnoty aktualizuj style.fontSize.
+      - Hodnota ze slideru bude vstupním parametrem funkce.
+*/
+
+
+/* =====================================================
+   Práce s formuláři a uživatelskými daty – obecné úkoly
+   ===================================================== */
+
+/* - Nauč se načíst hodnoty z inputů pomocí .value.
+   - Vytvoř funkci, která validuje hodnoty podle podmínek.
+   - Dynamicky aktualizuj HTML podle vstupních dat
+     (např. okamžitý výpočet ceny, filtrování seznamu apod.).
+*/
+
+
+/* ================================================
+   🟣 ÚKOLY 41–50: Pokročilejší logika a práce s daty
+   ================================================ */
+
+/* 41) Generuj náhodné heslo z písmen, číslic a symbolů.
+      - Funkce přijme délku jako parametr.
+      - Použij Math.random a vlastní pole znaků.
+*/
+
+/* 42) Spočítej faktoriál zadaného čísla.
+      - Vytvoř klasickou funkci nebo arrow funkci.
+      - Vyzkoušej rekurzi nebo cyklus.
+*/
+
+/* 43) Zjisti, zda je text palindrom („kajak“, „oko“).
+      - Vytvoř funkci, která vrací true/false.
+      - Odstraň mezery a porovnej text pozpátku.
+*/
+
+/* 44) Vytvoř jednoduché stopky – Start / Stop / Reset.
+      - Použij setInterval a clearInterval.
+      - Funkce musí správně pracovat s proměnnými ve scope.
+*/
+
+/* 45) Simuluj hod kostkou (1–6).
+      - Funkce vrací náhodné číslo 1–6.
+      - Výsledek vypiš do HTML.
+*/
+
+/* 46) Najdi nejčastější hodnotu v poli (moda).
+      - Vytvoř funkci, která přijme pole jako parametr.
+      - Použij objektový „počítací“ slovník (frequency map).
+*/
+
+/* 47) Vytvoř funkci, která formátuje datum do českého formátu
+      (DD.MM.YYYY).
+      - Funkce dostane objekt Date a vrací string.
+*/
+
+/* 48) Zjisti, kolik dní zbývá do konce roku.
+      - Spočítej rozdíl mezi dnešním datem a 31.12.
+      - Vrátí celé číslo (Math.floor).
+*/
+
+/* 49) Vytvoř jednoduchý to-do list:
+      - Přidávání úkolů
+      - Odstraňování úkolů
+      - Každá operace musí být funkce.
+*/
+
+/* 50) Ulož a načti data z localStorage (např. skóre nebo jméno).
+      - Použij localStorage.setItem a localStorage.getItem.
+      - Zobraz načtená data v HTML.
+*/
