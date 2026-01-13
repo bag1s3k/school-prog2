@@ -38,6 +38,15 @@ function ex33Timer() {
       - Vytvoř funkci s parametrem (barva).
       - Vyzkoušej nastavit hodnotu přes document.body.style.
 */
+const ex34 = document.getElementById("ukol34");
+ex34.addEventListener("click", function() {
+    const color = prompt("Enter color: ");
+    ex34Func(color);
+})
+
+function ex34Func(color) {
+    document.body.style.color = color
+}
 
 /* 35) Po najetí myší na obrázek ho zvětši.
       - Použij eventy mouseover a mouseout.
