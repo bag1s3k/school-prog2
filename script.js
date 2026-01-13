@@ -17,6 +17,12 @@ function ex31Func() {
       - Napiš funkci, která změní .textContent nebo .innerText.
       - Vyzkoušej použití arrow funkce.
 */
+const ex32 = document.getElementById("ukol32");
+ex32.addEventListener("click", ex32Func);
+
+function ex32Func() {
+    document.getElementById("text32").innerText = "Hello world";
+};
 
 /* 33) Vypiš do <div> aktuální čas, který se bude každou sekundu aktualizovat.
       - Použij setInterval a vlastní funkci pro získání času.
