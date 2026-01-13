@@ -28,6 +28,11 @@ function ex32Func() {
       - Použij setInterval a vlastní funkci pro získání času.
       - Funkce by měla vracet formátovaný čas (HH:MM:SS).
 */
+setInterval(ex33Timer, 1000);
+function ex33Timer() {
+    const d = new Date();
+    document.getElementById("clock33").innerHTML = d.toLocaleTimeString();
+}
 
 /* 34) Po kliknutí na tlačítko změň barvu pozadí celé stránky.
       - Vytvoř funkci s parametrem (barva).
