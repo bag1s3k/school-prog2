@@ -6,6 +6,12 @@
       - Vytvoř funkci, která zobrazí alert.
       - Použij událost onclick nebo addEventListener.
 */
+const ex31 = document.getElementById("ukol31");
+ex31.addEventListener("click", ex31Func);
+
+function ex31Func() {
+    alert("Ahoj světe!");
+};
 
 /* 32) Po kliknutí na tlačítko změň text vybraného HTML elementu.
       - Napiš funkci, která změní .textContent nebo .innerText.
