@@ -5,7 +5,8 @@ Each language has its **own branch**
 - `html-css` → HTML & CSS  
 - `javascript` → javascript
 - `php` → php
-- `proj-prg-2` → future branch for the project
+- `proj-prg-2` → branch for the project
+- - `other`→ anything else is there
 - `main` → don't care, it's just for the Github activity chart
 
 `git clone -b branch --single-branch https://github.com/bag1s3k/school-prog2.git`
